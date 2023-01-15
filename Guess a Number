@@ -1,0 +1,37 @@
+package moon;
+
+import java.util.Scanner;
+
+public class guess {
+
+	public static void main(String[] args) {
+		
+      Scanner kin = new Scanner(System.in);
+      int number = 7;
+		System.out.println("guess the number between 1-10");
+      int guess = Integer.parseInt(kin.nextLine().trim());
+      if(guess>number) { 
+    	  if (guess>10) {System.out.println("not valid number");}
+    	  else {
+			System.out.println("you guessed too high!");
+    	    
+		}
+	}
+	else if (guess < number) {
+		
+		if (guess<0) {
+			System.out.println("why you are so negative?");
+		} else if (guess==0) {System.out.println("zero to hero?");}
+		else {System.out.println("you guessed too low!");
+    	  
+  
+		}
+	}
+		else {
+			System.out.println("you guessed it!");
+    
+      }
+		kin.close();
+	}
+
+}
