@@ -25,15 +25,12 @@ public class numberofdays {
 			} else {
 				if (year % 400 != 0) {
 					numDays = 28;
-
 				} else if (year % 100 != 0) {
-					numDays = 29;
+					numDays = 28;
 
 				} else {
 					numDays = 29;
-
 				}
-
 			}
 
 			break;
